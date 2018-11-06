@@ -49,7 +49,7 @@ for ph in trackerList:
     databaseDF = databaseDF.append(detailDatabase)
 
     # print(databaseDF["Unnamed: 11"].dtypes)
-
+    
 writer = pd.ExcelWriter(r"D:\For OT_NS.xlsx")
 namelistDF.to_excel(writer, sheet_name="Sheet1")
 databaseDF.to_excel(writer, sheet_name="Sheet2")
